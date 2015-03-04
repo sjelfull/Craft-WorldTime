@@ -4,7 +4,7 @@ Uses [WorldTime.io](http://www.worldtime.io/) to fetch timezone information abou
 
 ### Usage
 
-```
+```twig
 {% set timestats = craft.worldtime.ipToTime() %}
 
 <p>
@@ -15,7 +15,7 @@ Uses [WorldTime.io](http://www.worldtime.io/) to fetch timezone information abou
 
 Example return:
 
-```
+```json
 {
   "current": {
     "abbreviation": "GMT",
@@ -48,6 +48,6 @@ Example return:
 
 You may also define a IP address to look up:
 
-```
+```twig
 {% set timestats = craft.worldtime.ipToTime('216.58.209.142') %}
 ```
